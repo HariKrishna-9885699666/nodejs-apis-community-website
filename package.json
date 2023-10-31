@@ -1,0 +1,47 @@
+{
+  "name": "nodejs-api-community-website",
+  "version": "1.0.0",
+  "description": "REST API's",
+  "main": "index.js",
+  "author": {
+    "name": "Hari Krishna Anem",
+    "email": "anemharikrishna@gmail.com",
+    "url": "https://harikrishna.netlify.com/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "//": "--------------------------------------------------   In LINUX Environment use export NODE_ENV=development    ----------------------------------------------------------------",
+    "//start": "export NODE_ENV=development&& nodemon index.js",
+    "//re-seed": "export NODE_ENV=development&& npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && nodemon index.js",
+    "//migrate": "export NODE_ENV=development&& npx sequelize db:migrate && nodemon index.js",
+    "//": "--------------------------------------------------   In WINDOWS Environment use set NODE_ENV=development    ----------------------------------------------------------------",
+    "start": "set NODE_ENV=development&& nodemon index.js",
+    "re-seed": "set NODE_ENV=development&& npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && nodemon index.js",
+    "migrate": "set NODE_ENV=development&& npx sequelize db:migrate && nodemon index.js"
+  },
+  "dependencies": {
+    "@getbrevo/brevo": "^1.0.1",
+    "@hapi/joi": "^15.0.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.33.0",
+    "sequelize-cli": "^6.6.1",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
+  }
+}

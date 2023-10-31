@@ -1,0 +1,14 @@
+{
+  "USER_ALREADY_FOUND": {
+    "statusCode": 404,
+    "error": "User already Found"
+  },
+  "USER_NOT_FOUND": {
+    "statusCode": 404,
+    "error": "User not Found"
+  },
+  "INVALID_USER_PWD": {
+    "statusCode": 404,
+    "error": "Invalid Email / Password"
+  }
+}
